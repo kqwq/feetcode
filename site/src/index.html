@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feetcode</title>
+</head>
+
+  <!-- Navigation bar in the style of Leetcode -->
+  <nav class="bg-slate-50">
+    <div class="container mx-auto px-6 md:px-0">
+      <div class="flex items-center justify-center">
+        <div class="mr-6">
+          <a href="index.html" class="text-lg font-semibold text-gray-900 no-underline">
+            <img src="asset/logo.PNG" alt="logo" class="h-8">
+          </a>
+        </div>
+        <div class="flex-1 text-right">
+          <a href="explore.html" class="no-underline hover:underline text-gray-800 text-sm p-3">Explore</a>
+          <a href="submit.html" class="no-underline hover:underline text-gray-800 text-sm p-3">Problems</a>
+          <a href="community.html" class="no-underline hover:underline text-gray-800 text-sm p-3">Discuss</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Card panel that stretches to half the screen -->
+  <div class="container mx-auto px-6 md:px-0">
+    <div class="flex flex-col lg:flex-row">
+      <div class="w-full lg:w-1/2">
+        <div class="bg-white rounded-lg shadow p-6">
+          <div class="flex flex-col items-center justify-center">
+            <div class="text-center">
+              <h1 class="text-3xl font-semibold text-gray-900">
+                <span class="text-gray-600">Welcome to </span>
+                <span class="text-indigo-600">Feetcode</span>
+              </h1>
+              <p class="mt-4 text-gray-600">
+                Solve this sample problem (#37)
+              </p>
+            </div>
+          </div>
+
+      
+
+          <span id="problem"></span>
+          <!-- download file button -->
+          <div class="flex justify-center mt-4">
+            <a href="javascript:void(0)" id="download" class="inline-block bg-indigo-500 text-white text-sm px-4 py-2 rounded-full">
+              Download Input
+            </a>
+          </div>
+        </div>
+        <br><br>
+      </div>
+      <!-- Code input (text input) -->
+      <div class="w-full lg:w-1/2">
+        <div class="bg-white rounded-lg shadow p-6">
+          <div class="flex flex-col items-center justify-center">
+            <div class="text-center">
+              <h1 class="text-3xl font-semibold text-gray-900">
+                <span class="text-gray-600">Submit </span>
+                <span class="text-indigo-600">Output</span>
+              </h1>
+              <p class="mt-4 text-gray-600">
+                Here at Feetcode we're too poor to run your code server-side, so just submit your output here :)
+              </p>
+            </div>
+            <!-- Download input -->
+            <input type="text" id="my-output" 
+              class="w-full mt-4 p-3 bg-gray-200 rounded-lg text-gray-800 focus:outline-none focus:bg-white focus:shadow-outline"
+              placeholder="Your output here">
+
+            <button id="submit" type="button"
+              class="mt-2 bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+              Submit
+            </button>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  </body>
+
+</html>
